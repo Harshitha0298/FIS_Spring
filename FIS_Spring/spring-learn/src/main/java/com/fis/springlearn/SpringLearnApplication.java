@@ -33,8 +33,8 @@ public class SpringLearnApplication {
 
 	public static void displayEmployeeControllerAnnotation(ApplicationContext applicationContext) {
 		LOGGER.info("START");
-		EmployeeController employeeController = applicationContext.getBean("employeeController",
-				EmployeeController.class);
+		ApplicationContext context = new ClassPathXmlApplicationContext("employee.xml");
+		EmployeeController employeeController = context.getBean("controller", EmployeeController.class);
 		LOGGER.debug("EmployeeController : {}", employeeController);
 		LOGGER.info("END");
 
