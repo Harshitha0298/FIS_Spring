@@ -1,4 +1,5 @@
-package com.fis.springlearn.EmployeeDao;
+package com.fis.springlearn.dao;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
